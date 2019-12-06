@@ -42,7 +42,10 @@ return (
             </Link>
         </li>
     </ul>
-    <button className="tilmeldsub" type="submit"> <img className="check" src={Check} alt="ck"/>Tilmeld dig her</button>
+    <button className="tilmeldsub" type="submit"> <img className="check" src={Check} alt="ck" />Tilmeld dig her</button>
+
+
+
 </div>
 );
 }

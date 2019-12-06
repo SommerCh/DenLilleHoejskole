@@ -19,44 +19,46 @@ import Tilmelding from './components/tilmelding';
 import Slider from './components/header/slider';
 import Footer from './components/footer';
 import Fejl404 from './components/fejl404';
+import TilToppen from './components/tiltoppen';
 
 
 
 function App() {
 return (
 <div className="App">
-  
+
   <BrowserRouter>
-  
+
     <Header />
 
     <Slider />
 
     <Switch>
-    <Route exact path="/" component={Home} />
-    <Route path="/LangeKurser" component={LangeKurser} />
-    <Route path="/KorteKurser" component={KorteKurser} />
-    <Route path="/Studieture" component={Studieture} />
-    <Route path="/KursusCenter" component={KursusCenter} />
-    <Route path="/OmSkolen" component={OmSkolen} />
-    <Route path="/PriserOgTilskud" component={PriserOgTilskud} />
-    <Route path="/Linjefag" component={Linjefag} />
-    <Route path="/Tilmelding" component={Tilmelding} />
-    <Route path="/Search" component={Search} />
-    <Route path="/Foto" component={Foto} />
-    <Route path="/Dans" component={Dans} />
-    <Route path="/Sangskriver" component={Sangskriver} />
-    <Route path="/Emusik" component={Emusik} />
-    <Route path="/Adventersport" component={Adventersport} />
-  
-    <Route component={Fejl404} />
+      <Route exact path="/" component={Home} />
+      <Route path="/LangeKurser" component={LangeKurser} />
+      <Route path="/KorteKurser" component={KorteKurser} />
+      <Route path="/Studieture" component={Studieture} />
+      <Route path="/KursusCenter" component={KursusCenter} />
+      <Route path="/OmSkolen" component={OmSkolen} />
+      <Route path="/PriserOgTilskud" component={PriserOgTilskud} />
+      <Route path="/Linjefag" component={Linjefag} />
+      <Route path="/Tilmelding" component={Tilmelding} />
+      <Route path="/Search" component={Search} />
+      <Route path="/Foto" component={Foto} />
+      <Route path="/Dans" component={Dans} />
+      <Route path="/Sangskriver" component={Sangskriver} />
+      <Route path="/Emusik" component={Emusik} />
+      <Route path="/Adventersport" component={Adventersport} />
 
-    {/* <Redirect to="/Fejl404" component={Fejl404} />  */}
-    
-</Switch>
-  
+      <Route component={Fejl404} />
+
+      {/*
+      <Redirect to="/Fejl404" component={Fejl404} /> */}
+
+    </Switch>
+
   </BrowserRouter>
-
+  <TilToppen />
   <Footer />
 
 </div>

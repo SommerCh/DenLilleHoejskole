@@ -5,6 +5,7 @@ import '../style/langekurser.css';
 
 
 const LangeKurser = () => {
+  
 return (
 
 <div className="langekurser">
