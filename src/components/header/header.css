@@ -1,0 +1,428 @@
+.header {
+  background-color: #ff8400;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+}
+
+.logo {
+  width: 10%;
+  padding: 0;
+  position: absolute;
+  top: 3.4%;
+  left: 5%;
+  z-index: 100;
+}
+
+
+
+
+.navbar {
+  padding: 4.5%;
+
+}
+
+ul {
+  margin-left: 15%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 6.7%;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.søgewrap {
+  font-size: 30px;
+}
+
+.søgewrap input {
+  position: absolute;
+  top: 3px;
+  left: 45px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  animation: søg 0.2s ease-in;
+}
+
+.søgewrap button {
+  position: absolute;
+  top: 3px;
+  left: 231px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  animation: søg 0.2s ease-in;
+}
+
+@keyframes søg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+.active {
+  color: #9b8a90;
+}
+
+.dropdown-indhold {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown-indhold a:hover {
+  background-color: #ddd;
+  box-shadow: 1px 2px 2px rgb(192, 188, 188);
+
+}
+
+.dropdown-indhold a {
+  cursor: pointer;
+  padding: 10% 10%;
+  font-size: 17px;
+  display: block;
+  border: solid rgba(128, 128, 128, 0.452) 1px;
+
+}
+
+.dropdown:hover .dropdown-indhold {
+  display: block;
+}
+
+.dropdown-indhold1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown1 {
+  margin-left: 5%;
+}
+
+.dropdown-indhold1 a:hover {
+  background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown-indhold1 {
+  display: block;
+}
+
+.dropdown-indhold1 p:hover {
+  background-color: #ddd;
+  box-shadow: 1px 2px 2px rgb(192, 188, 188);
+
+}
+
+.dropdown-indhold1 p {
+  cursor: pointer;
+  padding: 6% 2%;
+  margin: 2%;
+}
+
+/* Slider */
+
+.slidewrapper {
+  width: 100%;
+  height: 500px;
+}
+
+.slide1,
+.slide2,
+.slide3 {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+.slide1 {
+  background: url('./headerImg/slide1.jpg')no-repeat center;
+  background-size: cover;
+  animation: fade 10s infinite;
+
+
+}
+
+.slide2 {
+  background: url('./headerImg/slide2.jpg')no-repeat center;
+  background-size: cover;
+  animation: fade2 10s infinite;
+
+}
+
+.slide3 {
+  background: url('./headerImg/slide3.jpg')no-repeat center;
+  background-size: cover;
+  animation: fade3 10s infinite;
+
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1
+  }
+
+  33.333% {
+    opacity: 0
+  }
+
+  66.666% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0
+  }
+
+  33.333% {
+    opacity: 1
+  }
+
+  66.666% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes fade3 {
+  0% {
+    opacity: 0
+  }
+
+  33.333% {
+    opacity: 0
+  }
+
+  66.666% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+
+
+/* Responsiv */
+
+
+@media only screen and (max-width: 1200px) {
+
+  .header {
+    height: 40vh;
+  }
+
+  .logo {
+    width: 25%;
+    top: 0%;
+    left: 0;
+  }
+
+  .ulhome {
+    margin: 0;
+    padding: 5%;
+  }
+
+  .langekurser .tilmeldsub {
+    background: black;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 100%;
+    padding: 5%;
+  }
+
+  .langekurser .tilmeldsub .check {
+    max-width: 10%;
+    margin: 0 2px;
+  }
+  
+
+  .home .tilmeldsub {
+    background: black;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 100%;
+    padding: 5%;
+  }
+
+  .home .tilmeldsub .check {
+    max-width: 10%;
+    margin: 0 2px;}
+
+  .navbar ul {
+    padding: 0%;
+    flex-direction: column;
+    margin: 0 auto;}
+
+  
+  .search .resultat img {margin:0 0% 0 -30%  ; width: 450px;padding: 0;}
+  
+  .App .priser {
+    height:20vh;
+    width: 100%;
+}
+
+.priser .gulv {
+    height: 55px;
+    margin:25.5% 0 0 0 ;
+}
+
+.pris {
+    margin: 0;
+    width: 30%;
+}
+
+  .footer .adr {
+    margin: auto 14%;
+    padding: 0;
+  }
+
+  .footer textarea {
+    width: 100%;
+  }
+
+  .footer .form input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar li {
+    margin: 0;
+    padding: 0%;
+    line-height: 40px;
+  }
+
+  .søgewrap input {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+  }
+
+  .søgewrap button {
+    position: absolute;
+    top: 50px;
+    left: 276px;
+  }
+
+
+  .dropdown-indhold {
+    display: none;
+    position: absolute;
+    left: 34%;
+  }
+
+  .dropdown-indhold1 {
+    display: none;
+    position: absolute;
+    left: 34%;
+  }
+
+
+  .linjebox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .linjefag .linjebox p {
+    margin: 10% 0 5px 10px;
+    width: 100%;
+  }
+
+  table {
+    border: solid 1px;
+    width: 100%;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  table .tilmeldkort {
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+  }
+
+  table td,
+  th {
+    border: none;
+  }
+
+  .kursuscenter .velkommen {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .kursuscenter .velkommen img {
+    margin: 0;
+    height: 100px;
+    margin: auto;
+  }
+
+  .kursuscenter .velkommen h4 {
+    font-size: 18px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .fejl .fejlh1 {
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-size: 30px;
+   font-family: Century Gothic;
+   top: 120%;
+}
+}

@@ -1,0 +1,155 @@
+.tilmelding h1 {
+    text-align: center;
+    margin: 2%;
+}
+
+.formen {
+    font-size: 18px;
+    border: solid 1px grey;
+    margin: 5%;
+    padding: 2%;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(134, 175, 202);
+
+}
+
+.inputfelt input {
+    padding: 2%;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid rgb(187, 187, 187);
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.inputtext textarea {
+    background-color: white;
+    border: 1px solid rgb(187, 187, 187);
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+    border-radius: 5px;
+    width: 94%;
+}
+
+
+fieldset {
+    text-align: center;
+    padding: 5%;
+    font-size: 20px;
+    border: solid greenyellow 1px;
+    background-color: rgba(124, 193, 224, 0.589);
+    border-radius: 5px;
+    box-shadow: rgb(204, 255, 128) 1px 1px 30px 1px;
+}
+
+fieldset input {
+    border: 1px solid rgb(187, 187, 187);
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+
+.navnewrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navnewrap input {
+    padding: 6%;
+    margin: 1px;
+    width: 99%;
+    border: 1px solid rgb(187, 187, 187);
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+.infowrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infowrap input {
+    padding: 6%;
+    margin: 1px;
+    width: 99%;
+    border: 1px solid rgb(187, 187, 187);
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+.adressewrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.adressewrap input {
+    padding: 6%;
+    margin: 1px;
+    width: 99%;
+    border: 1px solid rgb(187, 187, 187);
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+.sendtilmelding {
+    margin: 4% 0 0 18%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.sendtilmelding img {
+    width: 5%;
+    margin: auto 2%;
+}
+
+.taktext {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    background-color: #ff8400;
+    width: 30%;
+    padding: 5%;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 35px;
+    border: solid black 1px;
+    animation: tak 0.7s linear;
+}
+
+@keyframes tak {
+    0% {
+        top: 0%;
+        left: 50%;
+    }
+    50% {
+        top: 99%;
+        left: 50%;
+    }
+    70% {
+        top: 79%;
+        left: 50%;
+    }
+
+
+    100% {
+        top: 87%;
+        left: 50%;
+    }
+}

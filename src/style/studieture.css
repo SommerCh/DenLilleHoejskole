@@ -1,0 +1,22 @@
+.studieture {
+    max-width: 48%;
+    margin: 5% auto;
+    font-size: 18px;
+}
+
+.galleri {
+    flex-direction: row;
+    text-align: center;
+    max-width: 100%;
+    border-top: solid black 1px;
+    padding-top: 5%;
+    margin-top: 5%;
+
+
+}
+
+.galleri img {
+    margin: 1%;
+    max-width: 30%;
+
+}

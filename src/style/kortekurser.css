@@ -1,0 +1,41 @@
+.kortekurser{
+    max-width: 48%;
+    margin: 5% auto;
+    font-size: 18px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    max-width: 100%;margin: 10% 0 0 0;
+  }
+
+  th{background-color: #ff8400;}
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  td:nth-child(5) {
+      text-align: center;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .tilmeldkort {
+    background: black;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    max-width: 50%;
+    padding: 1%;
+    cursor: pointer;
+    margin: auto;
+
+}
+
+.tilmeldkort .check {
+    max-width: 15%;
+    margin: 0 2px;
+  
+}
