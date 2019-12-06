@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Header from './components/header/header';
 import Search from './components/seach';
 import Home from './components/home';
@@ -25,59 +25,36 @@ import Fejl404 from './components/fejl404';
 function App() {
 return (
 <div className="App">
+  
   <BrowserRouter>
+  
     <Header />
 
     <Slider />
+
     <Switch>
-    <Route path="/Fejl404" component={Fejl404} />
-      
-      <Route exact path="/" component={Home} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
+    <Route exact path="/" component={Home} />
+    <Route path="/LangeKurser" component={LangeKurser} />
+    <Route path="/KorteKurser" component={KorteKurser} />
+    <Route path="/Studieture" component={Studieture} />
+    <Route path="/KursusCenter" component={KursusCenter} />
+    <Route path="/OmSkolen" component={OmSkolen} />
+    <Route path="/PriserOgTilskud" component={PriserOgTilskud} />
+    <Route path="/Linjefag" component={Linjefag} />
+    <Route path="/Tilmelding" component={Tilmelding} />
+    <Route path="/Search" component={Search} />
+    <Route path="/Foto" component={Foto} />
+    <Route path="/Dans" component={Dans} />
+    <Route path="/Sangskriver" component={Sangskriver} />
+    <Route path="/Emusik" component={Emusik} />
+    <Route path="/Adventersport" component={Adventersport} />
+  
+    <Route component={Fejl404} />
 
-      <Route path="/LangeKurser" component={LangeKurser} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/KorteKurser" component={KorteKurser} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Studieture" component={Studieture} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/KursusCenter" component={KursusCenter} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/OmSkolen" component={OmSkolen} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/PriserOgTilskud" component={PriserOgTilskud} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Linjefag" component={Linjefag} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Tilmelding" component={Tilmelding} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Search" component={Search} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Foto" component={Foto} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Dans" component={Dans} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Sangskriver" component={Sangskriver} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Emusik" component={Emusik} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-      <Route path="/Adventersport" component={Adventersport} />
-      <Redirect to="/Fejl404" component={Fejl404}/>
-
-    </Switch>
+    {/* <Redirect to="/Fejl404" component={Fejl404} />  */}
+    
+</Switch>
+  
   </BrowserRouter>
 
   <Footer />

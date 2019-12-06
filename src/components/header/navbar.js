@@ -20,6 +20,7 @@ return (
             <div className="dropdown-indhold">
                 <NavLink to="/PriserOgTilskud">Priser og tilskud</NavLink>
                 <NavLink to="/Linjefag">Linjefag</NavLink>
+                <NavLink to="/404"><strong>Link der ikke virker</strong></NavLink>
 
 
             </div>
